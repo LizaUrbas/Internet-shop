@@ -1,5 +1,5 @@
 interface IUser {
-    userId: number;
+    IUserId: number;
     email: string;
     phoneNumber: string;
     firstName: string;
@@ -8,34 +8,12 @@ interface IUser {
     homeAdress?: string;
 }
 
-interface Product {
-    productId: string;
-    productName: string;
-    productPrice: number;
-    productDescription: string;
-}
-
-interface Supplier {
-    supplierId: number;
-    supplierName: string;
-    supplierDescription?: string;
-    deliveryDate?: Date;
-    deliveryId?: string;
-}
-
 interface Order {
     orderId: string;
     orderDate: Date;
-    userId?: number;
+    IUserId?: number;
     productId?: string;
     deliveryId?: string;
-}
-
-interface OrderDetailDelivery {
-    deliveryId: string;
-    orderId: string;
-    orderDetailId: string;
-    deliveryDate: Date;
 }
 
 interface OrderDetail {
@@ -45,11 +23,6 @@ interface OrderDetail {
     productQuantity: number;
 }
 
-interface Delivery {
-    deliveryId: string;
-    deliveryDate: Date;
-    supplierId: number;
-}
 
 
 
